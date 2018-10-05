@@ -8,7 +8,7 @@ namespace lab9
 {
     class Turner
     {
-        public Salary Sal
+        
 
     }
 }
