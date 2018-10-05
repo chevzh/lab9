@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace lab9
 {
-    class Program
+    class Student
     {
-        static void Main(string[] args)
-        {
-            
+        public int Salary { get; set; }
 
-        }
     }
 }

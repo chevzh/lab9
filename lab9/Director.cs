@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace lab9
 {
-    class Program
+    class Director
     {
-        static void Main(string[] args)
+        void Raise()
         {
-            
 
         }
+
+        void Penalty()
+        {
+
+        }
+
     }
 }
