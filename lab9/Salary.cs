@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace lab9
 {
-    class Salary
+    class SalaryEventArgs: EventArgs
     {
-        public  delegate void SalaryStateHandler(int sum);
+        //public  delegate void SalaryStateHandler(int sum);
 
-        public event SalaryStateHandler AddSalary;
-        public event SalaryStateHandler RemoveSalary;
+        //public event SalaryStateHandler AddSalary;
+        //public event SalaryStateHandler RemoveSalary;
 
+        public readonly int _delta;
+
+        public SalaryEventArgs(int delta)
+        {
+            _delta = delta;
+        }
 
     }
 }
