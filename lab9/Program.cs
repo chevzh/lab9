@@ -44,12 +44,30 @@ namespace lab9
             }
             Console.WriteLine(student.Name + " " + student.CurrentSalary.ToString());
 
+            Console.WriteLine("\n");
 
             string str = "qq    ,   ept";
-            StringFunc.DeleteSpaces(ref str);
-            StringFunc.DeletePointers(ref str);
-            
-            Console.WriteLine(str);
+            string str1 = null;
+
+            Action<string> Count;
+            Func<string, string> Op1;
+            Func<string, string> Op2;
+            Count = StringFunc.CharCount;
+            Op1 = StringFunc.DeleteSpaces;
+            Op2 = StringFunc.DeletePointers;
+
+         
+            StringFunc.ValidateString(str1,Count);
+            StringFunc.ValidateString(str, Count);
+
+           
+            str1 = StringFunc.ValidateString(str, Op1);
+            string str2 = StringFunc.ValidateString(str1, Op2);
+
+
+
+            Console.WriteLine("\n");
+            Console.WriteLine(str2);
 
 
 
